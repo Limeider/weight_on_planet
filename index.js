@@ -105,16 +105,7 @@ function playAudioOnFocus() {
             console.error("Audio playback error:", error)
         })
     }
-
-    // Play audio when the page is in focus
-    document.addEventListener('visibilitychange', () => {
-        if (!document.hidden) {
-            playAudio()
-        } else {
-            audio.pause() // Pause the audio when the page is out of focus
-        }
-    })
+    playAudio()
 }
 
-// Call the function when the page is loaded
-window.addEventListener('load', playAudioOnFocus)
+document.addEventListener('click', playAudioOnFocus)
