@@ -1,0 +1,143 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+img {
+    image-rendering: optimizeSpeed;
+    max-width: 100%;
+    display: inline-block;
+}
+
+body {
+    background-image: url('images/galaxy.gif');
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+header>h1 {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    position: relative;
+    bottom: 30px;
+}
+
+header>h2 {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    position: relative;
+    bottom: 25px;
+}
+
+.input-container {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.input-container input {
+    width: 15rem;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.input-container select {
+    width: 10rem;
+    height: 40px;
+    padding-left: 5px;
+    border-radius: 5px;
+    margin-left: 0.25rem;
+    cursor: pointer;
+    background-color: rgba(211, 211, 211, 0.9);
+}
+
+.input-container button {
+    width: 8rem;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 0.50rem;
+    background-color: rgba(211, 211, 211, 0.25);
+    color: white;
+    cursor: pointer;
+}
+
+.flex-container {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: rgba(211, 211, 211, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 7px;
+}
+
+.image-container img {
+    padding-right: 2rem;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(211, 211, 211, 0.2);
+    color: white;
+    font-size: 1.5rem;
+    padding: 2rem;
+    border-radius: 7px;
+}
+
+.value-container {
+    width: 200px;
+    height: 200px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: rgba(211, 211, 211, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 1.5rem auto 0;
+}
+
+.value-span {
+    word-break: break-all;
+    padding: 1rem;
+}
+
+.invisible {
+    display: none;
+}
+
+@media only screen and (max-width: 650px) {
+
+    button {
+        margin-top: 1rem;
+    }
+
+    .description {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .value-container {
+        width: 125px;
+        height: 125px;
+        font-size: 1rem;
+        margin: 1.5rem auto 0;
+    }
+
+}

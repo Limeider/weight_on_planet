@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Solar System : 30 Days Of JS</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/space-favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>Calculate a weight of an object on a planet</h1>
+        <h2>(KG to N)</h2>
+    </header>
+    <main>
+        <audio id="backgroundAudio" loop>
+            <source src="audio/bg_music_long.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <div class="input-container">
+            <input type="text" id="mass" placeholder="Mass in Kilogram" />
+            <select>
+                <option value='none'>--select planet-- </option>
+                <option value='mercury'>Mercury</option>
+                <option value='venus'>Venus</option>
+                <option value='earth'>Earth</option>
+                <option value='moon'>Moon</option>
+                <option value='mars'>Mars</option>
+                <option value='jupiter'>Jupiter</option>
+                <option value='saturn'>Saturn</option>
+                <option value='uranus'>Uranus</option>
+                <option value='neptune'>Neptune</option>
+                <option value='pluto'>Pluto</option>
+            </select>
+            <button class="btn">Calculate weight</button>
+        </div>
+        <div class="flex-container">
+            <div class="image-container">
+
+            </div>
+            <div class="description">
+                <p class="p-description"></p>
+                <div class="value-container">
+                    <span class="value-span"></span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
